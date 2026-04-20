@@ -3,7 +3,6 @@
 ● clear heading hierarchy
 ● organized sections
 ● proper file structure*/
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,22 +12,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Emma Hitchens</h1>
+  <header>
+    <div class = "logo">  Emma Hitchens</div>
+    <div class ="hamburger">
+        <div class = "line"></div>
+        <div class = "line"></div>
+        <div class = "line"></div>
+  </div>
+  <nav class ="nav-bar">
+     <ul class="sidebar">
+      <li> <a href = "#" class = "active">Home</a>
+      </li>
+      <li> <a href ="#About"> About </a></li>
+      <li> <a href ="#Projects"> Projects </a></li>
+      <li> <a href ="#Contact"> Contact </a></li>
+    </ul>
+    <ul>
+      <li> <a href = "#" class = "active">Home</a>
+      </li>
+      <li> <a href ="#About"> About </a></li>
+      <li> <a href ="#Projects"> Projects </a></li>
+      <li> <a href ="#Contact"> Contact </a></li>
+    </ul>
+  </nav>
+  </header>
+<h1 class="space"> _</h1>
 <h2 id = "tag">--Emma since 2004--</h2>
-<h2>Navigation:</h2>
-<section id="nav">
-<a href="#About">About</a>
-<a href="#Prjoects">Prjoects</a>
-<a href="#Contact">Contact</a>
-</section>
 
-  
+<img scr = "riPicture.jpg" alt ="Emma on rhode island's coast">
+ <div class = "tabs_panels">
    <section id="About">
       <h2>About</h2>
       
-      <p>My name is Emma Hitchens. I am a Computer Science and Mathmatics Major with a concentration in cybersecurity and minor in data science. 
-        I am currently a Junior at Lewis and Clark College. Last year I studied abroad in Japan. I spent 4 months figuring out how to pay rent and how to deal with a city hall in a foregin language I am not full confident in speaking. 
-        Needless to say I grew alot from that experience and enjoyed making new friends.</p>
+      <p>My name is Emma Hitchens. I am a Computer Science and Mathematics combined major and a Data Science Major with a concentration in cybersecurity and minor in data science. 
+        I am currently a Junior at Lewis and Clark College. Last year, I studied abroad in Japan. I spent 4 months figuring out how to pay rent and how to deal with a city hall in a foregin language I am not full confident in speaking. 
+        Needless to say, I grew a lot from that experience and enjoyed making new friends.</p>
       <ul>
         <li>I can speak Japanese</li>
         <li>I can swim</li>
@@ -38,9 +56,9 @@
 
    <section id="Projects">
         <h2>Projects</h2>
-        <div class="yap"></div>
+        <div class="yap">
         <h3>Globes</h3>
-        <p>In highschool I took four years of 3D Computer Animation. This is one of the projects I worked on for my AP porfolio art submission.</p>
+        <p>In high school, I took four years of 3D Computer Animation. This is one of the projects I worked on for my AP portfolio art submission.</p>
         <a href="#Project1link">Project website(expired)</a>
         </div>
         <div class="yap">
@@ -55,12 +73,14 @@
         </div>
     </section>
 
-    <section id="Conacts">
+    <section id="Contact">
         <h2>Contacts</h2>
         <p>email: <a href="mailto:lc23-0373@lclark.edu">lc23-0373@lclark.edu</a> </p>
         <p>LinkedIn:<a href="https://www.linkedin.com/in/emma-hitchens-007728287/"> clicky</a></p>
         <p>Github:<a href="https://github.com/EmEdenbrooke"> no click</a></p>
     </section>
+  </div>
+
     <p>Copyright&copy; 2025 Emma Hitchens</p>
 </body>
 </html>

@@ -14,7 +14,7 @@ Students should move beyond simple vertical stacking(I have a hover navigation b
 
 body{
     background-color:  #D8959b;
-    background: url(Green\ \ Vine\ Illustration\ Phone\ Wallpaper\ \(Website\)\ \(3\).png) center ;
+    background: url(pinkWallpaper.png) center ;
     background-size: contain;
     font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:20px;
@@ -39,61 +39,95 @@ header{
     font-size: 28px;
     margin: 40 0px;
     font-weight: bold;
-    color: #F1C8CB;
+    color: #f4f3f1;
 }
 .hamburger{
  display: none;
 }
-.nav-bar ul{
+.nav-bar {
     position: fixed;
-    top: 0;
+    top: 0 ;
     right: 0;
-    height: 100vh;
     display: flex;  
     list-style: none;  
     display: flex;
     justify-content: flex-end;
+    padding: 5px;
 }
-.nav-bar ul li a{
+.nav-bar li a{
     display: block;
-    color: #fefefe;
+    color: #f4f3f1;
     font-size:  20px;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
 }
-.nav-bar ul li a:hover{
-    color: #11101b;
-    background: #fefefe;
+.nav-bar li a:hover{
+    color: #20413A;
+    background: #f4f3f1;
 }
-.nav-bar ul li a.active{
-    color: #11101b;
-    background-color: #fefefe;
+.nav-bar li a:hover svg {
+    fill: #20413A; 
+}
+.nav-bar li a svg {
+    transition: fill 0.3s ease;
+}
+.nav-bar li a.active{
+    color: #20413A;
+    background-color: #f4f3f1;
 }
 nav li:first-child{
     margin-right: auto;
 }
-@media only screen and(max-width:200px){
-    .hamburger {
+
+@media (max-width: 850px) {/*if the screen is small the nav-bar goes away for readability*/
+    #menu {
         display: block;
-        cursor: pointer;
     }
-    .hamburger .line{
-        width:30px;
-        height: 3px;
-        background: #fefefe;
-        margin: 6px 0;
-    }
-    .nav-bar{
-        display:none;
+    
+    .nav-bar li:not(#menu) {
+        display: none; 
     }
 }
+/*sidebar css*/
 .sidebar{
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255,0.7);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);/*creates white box to left*/
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none; /*edits text formatting*/
+    backdrop-filter: blur(10px);
+}
+
+.sidebar li a:hover svg {
+    fill: #f4f3f1; /* White color */
+}
+.sidebar li a svg {
+    fill: #20413A;
+    transition: fill 0.3s ease;
+}
+.sidebar li a{
+    display: block;
+    color: #20413A;
+    font-size:  20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+.sidebar li a:hover{
+    color: #f4f3f1;
+    background: #829672;
 }
 
 .space{
@@ -105,12 +139,13 @@ nav li:first-child{
 h2{
     font-size: 1.5rem;
     padding: 10px;
+    color: #344C3D;
     background-color: rgba(250,250,250,.7);
     box-shadow:  10px 5px 10px 0px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
 }
 #tag{
-    color: rgb(77, 70, 99);
+    color: #344C3D;
     text-align: center;
 }
 

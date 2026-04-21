@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio-Emma</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -19,21 +20,23 @@
         <div class = "line"></div>
         <div class = "line"></div>
   </div>
-  <nav class ="nav-bar">
+  <nav>
      <ul class="sidebar">
-      <li> <a href = "#" class = "active">Home</a>
-      </li>
+      <li id = "X" onclick= hideSidebar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 -960 960 960" width="2rem" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li> <a href = "#">Home</a></li>
       <li> <a href ="#About"> About </a></li>
       <li> <a href ="#Projects"> Projects </a></li>
       <li> <a href ="#Contact"> Contact </a></li>
+      
     </ul>
-    <ul>
-      <li> <a href = "#" class = "active">Home</a>
-      </li>
+    <ul class= "nav-bar">
+      <li> <a href = "#" class = "active">Home</a></li>
       <li> <a href ="#About"> About </a></li>
       <li> <a href ="#Projects"> Projects </a></li>
       <li> <a href ="#Contact"> Contact </a></li>
+      <li onclick= showSidebar() id="menu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 -960 960 960" width="2rem" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
+
   </nav>
   </header>
 <h1 class="space"> _</h1>
@@ -44,9 +47,9 @@
    <section id="About">
       <h2>About</h2>
       
-      <p>My name is Emma Hitchens. I am a Computer Science and Mathematics combined major and a Data Science Major with a concentration in cybersecurity and minor in data science. 
-        I am currently a Junior at Lewis and Clark College. Last year, I studied abroad in Japan. I spent 4 months figuring out how to pay rent and how to deal with a city hall in a foregin language I am not full confident in speaking. 
-        Needless to say, I grew a lot from that experience and enjoyed making new friends.</p>
+      <p>My name is Emma Hitchens. I am a Computer Science and Mathmatics Major with a concentration in cybersecurity and minor in data science. 
+        I am currently a Junior at Lewis and Clark College. Last year I studied abroad in Japan. I spent 4 months figuring out how to pay rent and how to deal with a city hall in a foregin language I am not full confident in speaking. 
+        Needless to say I grew alot from that experience and enjoyed making new friends.</p>
       <ul>
         <li>I can speak Japanese</li>
         <li>I can swim</li>
@@ -58,7 +61,7 @@
         <h2>Projects</h2>
         <div class="yap">
         <h3>Globes</h3>
-        <p>In high school, I took four years of 3D Computer Animation. This is one of the projects I worked on for my AP portfolio art submission.</p>
+        <p>In highschool I took four years of 3D Computer Animation. This is one of the projects I worked on for my AP porfolio art submission.</p>
         <a href="#Project1link">Project website(expired)</a>
         </div>
         <div class="yap">

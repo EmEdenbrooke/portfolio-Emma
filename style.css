@@ -1,12 +1,3 @@
-/*CSS
-CSS should demonstrate:
-● colors and typography✅
-● spacing (margin / padding)✅
-● layout organization✅
-● hover effects✅
-● borders or shadows✅
-● visually consistent design✅
-Students should move beyond simple vertical stacking(I have a hover navigation bar✅) and create a more structured layout.*/
 *{
     margin: 0;
     padding:0;
@@ -14,7 +5,7 @@ Students should move beyond simple vertical stacking(I have a hover navigation b
 
 body{
     background-color:  #D8959b;
-    background: url(pinkWallpaper.png) center ;
+    background: url(greenbackground.png) center ;
     background-size: contain;
     font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:20px;
@@ -134,6 +125,54 @@ nav li:first-child{
     font-size: 1rem;/*just giving space for the webpage*/
     padding: 50px 10px;
     margin-bottom: 20px;
+}
+/*first #home section image, typing, short about*/
+.container
+{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    color: black;
+}
+.home .home-info{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: left;
+    left:0;
+}
+.home .home-info .intro{
+    font-size: 28px;
+    position: fixed;
+    left:10%;
+}
+
+h3.intro span{
+    font-family: 'clicker script', cursive;
+    font-size:  30px;
+    font-weight: 700;
+    color:#D8959b;
+    
+}
+.home .home-img{
+    flex: 0 0 40%;
+    max-width: 60%;
+    background-color: #D8959b;
+    text-align: center;
+    position: relative;
+}
+.home .home-img img{
+    height: 70%;
 }
 
 h2{
